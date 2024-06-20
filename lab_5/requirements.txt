@@ -1,0 +1,7 @@
+matplotlib==3.8.4
+numpy==2.0.0
+pandas==2.2.2
+pyspark==3.5.1
+python-dotenv==1.0.1
+seaborn==0.13.2
+yfinance==0.2.40
