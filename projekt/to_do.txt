@@ -1,0 +1,42 @@
+#aby cos odpalic:
+./bin/spark-submit --master spark://192.168.100.7:7077 ~/studia/semestr_3_AM/Big_Data/Big_Data/projekt/testy.py 
+
+
+
+##############################################################################################################
+su - hadoop #zmina uzytkownika
+hdfs namenode -format 
+
+start-dfs.sh
+start-yarn.sh
+
+start-all.sh
+
+hadoop fs -mkdir       /tmp
+hadoop fs -mkdir       /szwabin
+hadoop fs -mkdir       /szwabin/hive
+hadoop fs -mkdir       /szwabin/hive/warehouse
+hadoop fs -chmod g+w   /tmp
+hadoop fs -chmod -R g+w   /szwabin/hive/warehouse
+
+stop-dfs.sh ### to stop
+http://172.20.0.1:9870/explorer.html#/
+http://172.20.0.1:8088/cluster
+
+nmcli -p device show #### tój adres ip
+
+ 		
+### spark
+start-master.sh  #http://<master_ip_address>:8080
+
+start-worker.sh spark://<master_ip_address>:7077
+
+#pyspark code:
+from pyspark.sql import SparkSession
+spark = SparkSession.builder.\
+        master("spark://192.168.0.123:7077").getOrCreate()
+print("spark session created")
+
+
+stop-all.sh
+stop-master.sh
