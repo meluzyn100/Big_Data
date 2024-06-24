@@ -1,0 +1,13 @@
+https://www.kaggle.com/code/samueldasoe/spotify-global-charts-analysis
+
+https://www.kaggle.com/code/vhtrieu/spotify-charts-analysis/notebook
+
+https://www.kaggle.com/code/alperenkaran/spotify-top50-charts-analysis/notebook
+
+https://www.kaggle.com/code/aneridalwadi/exploratory-data-analysis-taylor-swift
+
+https://www.kaggle.com/code/halimedogan/ts-with-pyspark
+
+https://www.kaggle.com/code/aneridalwadi/exploratory-data-analysis-taylor-swift
+
+https://www.kaggle.com/code/dhruvildave/spotify-charts-exploratory-data-analysis
